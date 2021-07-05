@@ -1,0 +1,728 @@
+/* La page */
+
+#bloc_page {
+  max-width: 2000px;
+  margin: 0 4%;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  max-width: 2000px;
+  margin: auto;
+}
+
+/* Police */
+
+@font-face {
+  font-family: "Raleway";
+  src: url("Raleway.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Raleway, sans-serif;
+  color: black;
+}
+/* Header */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#logo {
+  display: inline-flex;
+  flex-direction: row;
+  width: 3em;
+  height: 3em;
+  margin-top: 3em;
+}
+
+/* Navigation */
+
+nav a {
+  text-decoration: none;
+  border-top: 2px solid transparent;
+  padding: 3.5em 2em 2.5em;
+  display: inline-block;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  width: auto;
+}
+
+li {
+  margin-left: 2em;
+}
+
+.header-hébergement:hover {
+  border-top: 2px solid #0065fc;
+  color: #0065fc;
+}
+
+.header-activités:hover {
+  border-top: 2px solid #0065fc;
+  color: #0065fc;
+}
+
+.header-inscription {
+  color: #0065fc;
+}
+
+#inscription a {
+  color: #0065fc;
+  font-weight: bold;
+}
+
+#signup-mobile {
+  color: #0065fc;
+  font-weight: bold;
+  visibility: hidden;
+}
+
+/* Section recherche*/
+
+h1 {
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+}
+
+span.infosize {
+  font-size: 103%;
+}
+
+#searchbar {
+  display: inline-flex;
+  align-items: center;
+  height: 3em;
+  margin: 1.5em 0em;
+}
+
+#searchbar i {
+  padding: 1em 1em;
+  background-color: #f2f2f2;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+#position {
+  width: 13.4em;
+  padding: 0.7em;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+  border-left: none;
+  border-right: none;
+  font-size: large;
+  font-weight: bold;
+  color: black;
+}
+
+.styled {
+  width: 9em;
+  padding: 13px 20px 13px;
+  border: none;
+  color: white;
+  background-color: #0065fc;
+  font-size: 1.2em;
+  font-weight: 700;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+#loupe {
+  visibility: hidden;
+}
+
+/*Filtres*/
+
+#section-filtre {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.filtre {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: left;
+  justify-content: flex-start;
+}
+
+#titre-filtre {
+  display: inline;
+  font-size: 105%;
+  font-weight: 700;
+  padding: 10px 0px;
+  margin-right: 2em;
+}
+
+.filtre p {
+  padding: 13.3px 25px 12px 0px;
+  border: 1px solid rgb(221, 215, 215);
+  border-radius: 26px;
+  border-left-style: none;
+  font-size: large;
+  font-weight: 700;
+  margin-right: 2em;
+}
+
+.filtre i {
+  color: #0065fc;
+  background-color: #deebff;
+  border-radius: 50%;
+  margin-right: 1em;
+  display: inline;
+}
+
+#icone_one {
+  padding: 15px 15px;
+}
+
+#icone_two {
+  padding: 15px 18px;
+}
+
+#icone_three {
+  padding: 15px 15px;
+}
+
+#icone_four {
+  padding: 15px 15px;
+}
+
+#resultat {
+  margin-top: 2em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#resultat i {
+  margin-right: 1em;
+  color: #0065fc;
+  background-color: white;
+  border: 1px solid rgb(140, 140, 140);
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 80%;
+}
+
+#resultat p {
+  margin-top: 0.1em;
+}
+
+#host-popular {
+  display: flex;
+  width: 100%;
+}
+
+#host {
+  margin-top: 3em;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+}
+
+h2 {
+  margin-left: 1.5em;
+  padding-top: 30px;
+  margin-bottom: 0.5em;
+  display: inline-flex;
+}
+
+#bloc-hébergements {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0px;
+  min-width: 80%;
+}
+
+.photos {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 2px 2px 8px rgb(140, 140, 140);
+  margin-right: 1.5em;
+  margin-bottom: 2.5em;
+  margin-left: 2em;
+}
+
+.image_host {
+  border-radius: 10px;
+}
+
+.image_host {
+  height: 150px;
+  width: 350px;
+  padding: 5px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+}
+
+#légende_hébergements {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  font-size: 100%;
+  margin-left: 0.5em;
+  margin-bottom: 0.2em;
+}
+
+span.size {
+  font-size: 90%;
+  margin-left: 0.6em;
+  margin-bottom: 0.2em;
+}
+
+.note {
+  margin-left: 0.5em;
+  margin-bottom: 0.2em;
+}
+
+.complète {
+  color: #0065fc;
+}
+
+.fa-star.fa-xs.vide {
+  color: rgb(214, 206, 206);
+}
+
+h4 {
+  margin-bottom: 2.5em;
+  margin-left: 2.5em;
+  font-size: 110%;
+}
+
+#popular {
+  margin-top: 3em;
+  margin-left: 2em;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  min-width: 475px;
+}
+
+#bloc-populaires {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#titre_populaires_icone {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 0.5em;
+}
+
+.fa-chart-line {
+  font-size: 1.5em;
+  padding-top: 1em;
+  padding-right: 1.5em;
+}
+
+#légende_populaires {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5em;
+}
+
+.photos_populaires {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgb(140, 140, 140);
+  max-width: 400px;
+  margin: 1em 2em 1em;
+  object-fit: cover;
+}
+
+.photos_populaires a {
+  display: inline-flex;
+}
+
+.photos_populaires img {
+  height: 150px;
+  width: 150px;
+}
+
+.note_populaires {
+  padding-top: 70px;
+  margin-left: 0.5em;
+}
+
+.note_mid_populaire {
+  padding-left: 0.5em;
+  padding-top: 53px;
+}
+
+#bloc-activités {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 1em;
+}
+
+#ActivitésMarseille {
+  margin-top: 3em;
+}
+
+span.taille {
+  font-size: 150%;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.activité1 {
+  margin-right: 3em;
+}
+
+.activité2 {
+  margin-bottom: 3em;
+}
+
+.activité23 {
+  display: flex;
+  flex-direction: column;
+  margin-right: 3em;
+}
+
+.activité4 {
+  margin-right: 3em;
+}
+
+.activité5 {
+  margin-bottom: 3em;
+}
+
+.activité56 {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo1,
+.photo4 {
+  width: 400px;
+  height: 500px;
+  object-fit: cover;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.photo2 {
+  width: 400px;
+  height: 225px;
+  object-fit: cover;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.photo3 {
+  width: 400px;
+  height: 173px;
+  object-fit: cover;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.photo5 {
+  width: 400px;
+  height: 150px;
+  object-fit: none;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.photo6 {
+  width: 400px;
+  height: 248px;
+  object-fit: none;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+figure {
+  border-radius: 15px;
+  max-width: 400px;
+  box-shadow: 1px 1px 4px rgb(140, 140, 140);
+}
+
+figcaption {
+  padding: 15px 20px;
+  font-size: 110%;
+  font-weight: 650;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 5em;
+  background-color: #f2f2f2;
+}
+
+.apropos p {
+  font-size: large;
+  font-weight: 700;
+  padding-left: 1.8em;
+  padding-bottom: 1.5em;
+}
+
+.bloc-footer li {
+  list-style-type: none;
+  margin-bottom: 0.7em;
+}
+
+.apropos {
+  margin-top: 2em;
+  margin-left: 3em;
+  margin-right: 25em;
+}
+
+.noshébergements p {
+  font-size: large;
+  font-weight: 700;
+  padding-left: 1.7em;
+  padding-bottom: 1.5em;
+}
+
+.noshébergements {
+  margin-top: 2em;
+  margin-right: 25em;
+}
+
+.assistance p {
+  font-size: large;
+  font-weight: 700;
+  padding-left: 1.7em;
+  padding-bottom: 1.5em;
+}
+
+.assistance {
+  margin-top: 2em;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  #logo {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    justify-content: space-between;
+    margin-top: 2em;
+  }
+
+  #inscription {
+    display: none;
+  }
+
+  #signup-mobile {
+    margin-top: 1em;
+    visibility: visible;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  nav {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+
+  nav ul {
+    width: 100%;
+  }
+
+  nav li {
+    margin-left: 0;
+    width: 50%;
+    text-align-last: center;
+    border-bottom: 2px solid #f2f2f2;
+  }
+
+  #bleu {
+    border-bottom: 2px solid #0065fc;
+  }
+
+  nav a {
+    padding: 10% 0%;
+  }
+
+  #searchbar {
+    position: relative;
+  }
+
+  .styled {
+    visibility: hidden;
+  }
+
+  #loupe {
+    visibility: visible;
+    display: block;
+    color: white;
+    background-color: #0065fc;
+    font-size: 18px;
+    padding: 3%;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    right: 10em;
+  }
+
+  #section-filtre {
+    display: flex;
+    flex-wrap: wrap;
+    width: 110%;
+  }
+
+  #titre-filtre {
+    width: 100%;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .filtre {
+    margin-bottom: 1em;
+  }
+
+  .filtre p {
+    padding: 13.3px 15px 12px 0px;
+    margin-right: 0.5em;
+  }
+
+  .filtre i {
+    margin-right: 0.5em;
+  }
+
+  #host-popular {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+  }
+
+  #host {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+  }
+
+  #host h2 {
+    margin-left: 0.3em;
+    margin-bottom: 0;
+  }
+
+  #titre_populaires_icone {
+    margin: auto;
+  }
+
+  h2 {
+    margin-left: 1em;
+    margin-top: 0.1em;
+  }
+
+  .fa-chart-line {
+    padding-left: 0.5em;
+    padding-right: 1.5em;
+  }
+
+  .image_host {
+    width: 100%;
+  }
+
+  .photos {
+    width: 100%;
+    margin: 5% 0;
+  }
+
+  #popular {
+    margin-left: 0;
+    margin-top: 2em;
+    width: 109%;
+    min-width: 0;
+    border-radius: 0;
+  }
+
+  .photos_populaires {
+    margin: 5% 5%;
+  }
+
+  h4 {
+    margin: 0 1%;
+  }
+
+  #bloc-activités {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .activité1,
+  .activité2,
+  .activité23,
+  .activité4,
+  .activité5,
+  .activité56 {
+    width: 100%;
+    margin: auto;
+  }
+
+  .photo1,
+  .photo2,
+  .photo3,
+  .photo4,
+  .photo5,
+  .photo6 {
+    height: 225px;
+    width: 100%;
+  }
+
+  figure {
+    width: 100%;
+    margin: 5% 0;
+  }
+
+  .bloc-footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .apropos {
+    margin-left: 0;
+    margin-top: 3em;
+  }
+
+  .apropos,
+  .noshébergements {
+    margin-right: 0;
+  }
+
+  .assistance {
+    margin-bottom: 1.5em;
+  }
+}
