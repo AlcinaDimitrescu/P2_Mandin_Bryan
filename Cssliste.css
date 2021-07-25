@@ -266,7 +266,7 @@ h2 {
   object-fit: cover;
 }
 
-#légende_hébergements {
+.légende_hébergements {
   display: flex;
   flex-direction: column;
 }
@@ -333,7 +333,7 @@ h4 {
   padding-right: 1.5em;
 }
 
-#légende_populaires {
+.légende_populaires {
   display: flex;
   flex-direction: column;
   margin-top: 0.5em;
@@ -515,6 +515,10 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
   header {
     display: flex;
     flex-wrap: wrap;
