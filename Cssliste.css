@@ -231,7 +231,7 @@ span.infosize {
 }
 
 h2 {
-  margin-left: 1.5em;
+  margin-left: 1.7em;
   padding-top: 30px;
   margin-bottom: 0.5em;
   display: inline-flex;
@@ -248,13 +248,10 @@ h2 {
   background-color: white;
   border-radius: 15px;
   box-shadow: 2px 2px 8px rgb(140, 140, 140);
-  margin-right: 1.5em;
+  margin-right: 1.2em;
   margin-bottom: 2.5em;
   margin-left: 2em;
-}
-
-.image_host {
-  border-radius: 10px;
+  width: 27.5%;
 }
 
 .image_host {
@@ -264,6 +261,8 @@ h2 {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   object-fit: cover;
+  border-radius: 10px;
+  max-width: 100%;
 }
 
 .légende_hébergements {
@@ -311,7 +310,7 @@ h4 {
   margin-left: 2em;
   background-color: #f2f2f2;
   border-radius: 20px;
-  min-width: 475px;
+  min-width: 30%;
 }
 
 #bloc-populaires {
@@ -344,9 +343,9 @@ h4 {
   background-color: white;
   border-radius: 10px;
   box-shadow: 2px 2px 8px rgb(140, 140, 140);
-  max-width: 400px;
   margin: 1em 2em 1em;
   object-fit: cover;
+  width: 90%;
 }
 
 .photos_populaires a {
@@ -373,10 +372,13 @@ h4 {
   flex-wrap: wrap;
   flex-direction: row;
   margin-top: 1em;
+  width: 100%;
+  height: auto;
 }
 
 #ActivitésMarseille {
   margin-top: 3em;
+  width: 100%;
 }
 
 span.taille {
@@ -387,29 +389,39 @@ span.taille {
 
 .activité1 {
   margin-right: 3em;
+  width: 22%;
 }
 
 .activité2 {
   margin-bottom: 3em;
+  width: 100%;
+}
+
+.activité3 {
+  width: 100%;
 }
 
 .activité23 {
   display: flex;
   flex-direction: column;
   margin-right: 3em;
+  width: 22%;
 }
 
 .activité4 {
   margin-right: 3em;
+  width: 22%;
 }
 
 .activité5 {
   margin-bottom: 3em;
+  width: 100%;
 }
 
 .activité56 {
   display: flex;
   flex-direction: column;
+  width: 25%;
 }
 
 .photo1,
@@ -419,6 +431,8 @@ span.taille {
   object-fit: cover;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .photo2 {
@@ -427,6 +441,7 @@ span.taille {
   object-fit: cover;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
+  max-width: 100%;
 }
 
 .photo3 {
@@ -435,6 +450,7 @@ span.taille {
   object-fit: cover;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
+  max-width: 100%;
 }
 
 .photo5 {
@@ -443,6 +459,7 @@ span.taille {
   object-fit: none;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
+  max-width: 100%;
 }
 
 .photo6 {
@@ -451,6 +468,7 @@ span.taille {
   object-fit: none;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
+  max-width: 100%;
 }
 
 figure {
@@ -515,10 +533,6 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
-
   header {
     display: flex;
     flex-wrap: wrap;
@@ -576,10 +590,12 @@ footer {
 
   #searchbar {
     position: relative;
+    max-width: 100%;
   }
 
   .styled {
     visibility: hidden;
+    width: 1%;
   }
 
   #loupe {
@@ -592,13 +608,13 @@ footer {
     border: none;
     border-radius: 10px;
     position: absolute;
-    right: 10em;
+    right: 3.2em;
   }
 
   #section-filtre {
     display: flex;
     flex-wrap: wrap;
-    width: 110%;
+    width: 100%;
   }
 
   #titre-filtre {
@@ -612,8 +628,12 @@ footer {
   }
 
   .filtre p {
-    padding: 13.3px 15px 12px 0px;
+    padding: 13.3px 9px 12px 0px;
     margin-right: 0.5em;
+  }
+
+  #icone_one {
+    margin-right: 0.3em;
   }
 
   .filtre i {
@@ -644,13 +664,13 @@ footer {
   }
 
   h2 {
-    margin-left: 1em;
+    margin-left: 0.3em;
     margin-top: 0.1em;
   }
 
   .fa-chart-line {
-    padding-left: 0.5em;
-    padding-right: 1.5em;
+    padding-left: 2em;
+    padding-right: 0.5em;
   }
 
   .image_host {
@@ -658,8 +678,8 @@ footer {
   }
 
   .photos {
-    width: 100%;
-    margin: 5% 0;
+    width: 95%;
+    margin: 5% 1%;
   }
 
   #popular {
@@ -670,8 +690,12 @@ footer {
     border-radius: 0;
   }
 
+  .note_populaires {
+    padding-top: 53px;
+  }
+
   .photos_populaires {
-    margin: 5% 5%;
+    margin: 5% 3%;
   }
 
   h4 {
@@ -714,6 +738,7 @@ footer {
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin: 0;
   }
 
   .apropos {
@@ -728,5 +753,87 @@ footer {
 
   .assistance {
     margin-bottom: 1.5em;
+  }
+}
+
+@media screen and (max-width: 1464px) {
+  #host-popular {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+  }
+
+  #host {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #popular {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .photos_populaires {
+    width: 95%;
+    max-width: none;
+  }
+
+  .image_host {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1919px) {
+  #bloc-activités {
+    justify-content: flex-start;
+  }
+
+  #popular {
+    margin-left: 0;
+  }
+
+  .activité1 {
+    width: 21%;
+    margin-right: 1em;
+  }
+
+  .activité2 {
+    width: 100%;
+  }
+  .activité23 {
+    margin-right: 1em;
+  }
+
+  .activité3 {
+    width: 21%;
+  }
+
+  .activité4 {
+    width: 21%;
+    margin-right: 1em;
+  }
+
+  .activité5 {
+    width: 100%;
+  }
+
+  .activité6 {
+    width: 21%;
+  }
+
+  .apropos {
+    margin-left: 2em;
+    margin-right: 10em;
+  }
+  .noshébergements {
+    margin-right: 10em;
+  }
+
+  .filtre p {
+    margin-right: 1em;
+    padding: 13px 17.5px 12px 0px;
   }
 }
