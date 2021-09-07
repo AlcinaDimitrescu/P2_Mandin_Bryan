@@ -63,12 +63,12 @@ li {
   margin-left: 2em;
 }
 
-.header-hébergement:hover {
+.header-hebergement:hover {
   border-top: 2px solid #0065fc;
   color: #0065fc;
 }
 
-.header-activités:hover {
+.header-activites:hover {
   border-top: 2px solid #0065fc;
   color: #0065fc;
 }
@@ -152,7 +152,6 @@ span.infosize {
 .filtre {
   display: inline-flex;
   flex-wrap: wrap;
-  align-items: left;
   justify-content: flex-start;
 }
 
@@ -237,7 +236,7 @@ h2 {
   display: inline-flex;
 }
 
-#bloc-hébergements {
+#bloc-hebergements {
   display: flex;
   flex-wrap: wrap;
   padding: 10px 0px;
@@ -265,7 +264,7 @@ h2 {
   max-width: 100%;
 }
 
-.légende_hébergements {
+.legende_hebergements {
   display: flex;
   flex-direction: column;
 }
@@ -291,7 +290,7 @@ span.size {
   margin-bottom: 0.2em;
 }
 
-.complète {
+.complete {
   color: #0065fc;
 }
 
@@ -332,7 +331,7 @@ h4 {
   padding-right: 1.5em;
 }
 
-.légende_populaires {
+.legende_populaires {
   display: flex;
   flex-direction: column;
   margin-top: 0.5em;
@@ -367,7 +366,7 @@ h4 {
   padding-top: 53px;
 }
 
-#bloc-activités {
+#bloc-activites {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -376,7 +375,7 @@ h4 {
   height: auto;
 }
 
-#ActivitésMarseille {
+#ActivitesMarseille {
   margin-top: 3em;
   width: 100%;
 }
@@ -387,38 +386,38 @@ span.taille {
   margin-bottom: 1em;
 }
 
-.activité1 {
+.activite1 {
   margin-right: 3em;
   width: 22%;
 }
 
-.activité2 {
+.activite2 {
   margin-bottom: 3em;
   width: 100%;
 }
 
-.activité3 {
+.activite3 {
   width: 100%;
 }
 
-.activité23 {
+.activite23 {
   display: flex;
   flex-direction: column;
   margin-right: 3em;
   width: 22%;
 }
 
-.activité4 {
+.activite4 {
   margin-right: 3em;
   width: 22%;
 }
 
-.activité5 {
+.activite5 {
   margin-bottom: 3em;
   width: 100%;
 }
 
-.activité56 {
+.activite56 {
   display: flex;
   flex-direction: column;
   width: 25%;
@@ -480,7 +479,7 @@ figure {
 figcaption {
   padding: 15px 20px;
   font-size: 110%;
-  font-weight: 650;
+  font-weight: bolder;
 }
 
 footer {
@@ -509,14 +508,14 @@ footer {
   margin-right: 25em;
 }
 
-.noshébergements p {
+.noshebergements p {
   font-size: large;
   font-weight: 700;
   padding-left: 1.7em;
   padding-bottom: 1.5em;
 }
 
-.noshébergements {
+.noshebergements {
   margin-top: 2em;
   margin-right: 25em;
 }
@@ -702,19 +701,19 @@ footer {
     margin: 0 1%;
   }
 
-  #bloc-activités {
+  #bloc-activites {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
 
-  .activité1,
-  .activité2,
-  .activité23,
-  .activité4,
-  .activité5,
-  .activité56 {
+  .activite1,
+  .activite2,
+  .activite23,
+  .activite4,
+  .activite5,
+  .activite56 {
     width: 100%;
     margin: auto;
   }
@@ -747,7 +746,7 @@ footer {
   }
 
   .apropos,
-  .noshébergements {
+  .noshebergements {
     margin-right: 0;
   }
 
@@ -787,7 +786,7 @@ footer {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1919px) {
-  #bloc-activités {
+  #bloc-activites {
     justify-content: flex-start;
   }
 
@@ -795,32 +794,32 @@ footer {
     margin-left: 0;
   }
 
-  .activité1 {
+  .activite1 {
     width: 21%;
     margin-right: 1em;
   }
 
-  .activité2 {
+  .activite2 {
     width: 100%;
   }
-  .activité23 {
+  .activite23 {
     margin-right: 1em;
   }
 
-  .activité3 {
+  .activite3 {
     width: 21%;
   }
 
-  .activité4 {
+  .activite4 {
     width: 21%;
     margin-right: 1em;
   }
 
-  .activité5 {
+  .activite5 {
     width: 100%;
   }
 
-  .activité6 {
+  .activite6 {
     width: 21%;
   }
 
@@ -828,7 +827,7 @@ footer {
     margin-left: 2em;
     margin-right: 10em;
   }
-  .noshébergements {
+  .noshebergements {
     margin-right: 10em;
   }
 
